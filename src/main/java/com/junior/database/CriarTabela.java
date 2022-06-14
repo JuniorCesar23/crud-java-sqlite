@@ -7,11 +7,9 @@ public class CriarTabela {
 
     public static void criarTabela(Connection connection) {
 
-        try {
+        try (Statement statement = connection.createStatement()) {
 
-            Statement statement = connection.createStatement();
-
-            String criarTabela = "CREATE TABLE pessoa ("
+            String criarTabela = "CREATE TABLE IF NOT EXISTS pessoa ("
                     + "id INT AUTO_INCREMENT PRIMARY KEY, "
                     + "nome VARCHAR(50) NOT NULL, "
                     + "email VARCHAR(50) NOT NULL"
