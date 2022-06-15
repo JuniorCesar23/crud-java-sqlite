@@ -9,10 +9,10 @@ public class CriarTabela {
 
         try (Statement statement = connection.createStatement()) {
 
-            String criarTabela = "CREATE TABLE IF NOT EXISTS pessoa ("
-                    + "id INT AUTO_INCREMENT PRIMARY KEY, "
+            String criarTabela = "CREATE TABLE pessoa ("
+                    + "id INTEGER PRIMARY KEY AUTOINCREMENT, "
                     + "nome VARCHAR(50) NOT NULL, "
-                    + "email VARCHAR(50) NOT NULL"
+                    + "email VARCHAR(50) NOT NULL UNIQUE"
                     + ")";
 
             statement.execute(criarTabela);

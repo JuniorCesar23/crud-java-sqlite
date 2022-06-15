@@ -18,10 +18,10 @@ public class InserirDados {
             System.out.println("=== REALIZAR CADASTRO ===");
 
             System.out.println("Nome: ");
-                String nome = scanner.nextLine();
+            String nome = scanner.nextLine();
 
             System.out.println("E-mail: ");
-                String email = scanner.next();
+            String email = scanner.next();
 
             preparedStatement.setString(1, nome);
             preparedStatement.setString(2, email);
