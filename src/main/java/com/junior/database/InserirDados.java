@@ -31,7 +31,7 @@ public class InserirDados {
             System.out.println("Cadastro realizado com sucesso! Linhas afetadas: " + linhasAfetadas);
 
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("E-mail já cadastrado!");
         }
     }
 
