@@ -17,7 +17,7 @@
 <li>Em alguns casos, utiliza o bloco Try-With-Resources para garantir que determinados recursos sejam fechados, como também tornar o código mais curto</li>
 
 <h2>Detalhes de funcionamento:</h2>
-<li>Para conectar-se ao banco de dados, basta instanciar a classe responsável para isso <strong>"connections/IniciarConexao"</strong></li>
-<li>IMPORTANTE! Lembre-se de sempre chamar a classe para fechar a conexão com o banco assim que a aplicação, como um tudo, for finalizada <strong>"connections/FecharConexao"</strong></li>
-<li>Os dados foram inseridos pelo próprio programador</li>
+<li>Para conectar-se ao banco de dados, basta instanciar a classe responsável para isso <strong>"connections/IniciarConexao".</strong></li>
+<li><strong>IMPORTANTE!</strong> Lembre-se de sempre chamar a classe para fechar a conexão com o banco assim que a aplicação, como um tudo, for finalizada <strong>"connections/FecharConexao".</strong></li>
+<li>Os dados são inseridos pelo usuário e lidos pelo Scanner.</li>
 <li> </li>

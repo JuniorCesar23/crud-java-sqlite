@@ -17,8 +17,6 @@ public class App {
 
         Connection connection = IniciarConexao.iniciarConexao();
 
-        InserirDados.inserirDados(connection);
-
         VerDados.verDados(connection);
 
         FecharConexao.fecharConexao(connection);
