@@ -5,6 +5,8 @@ import java.sql.Connection;
 import com.junior.connections.FecharConexao;
 import com.junior.connections.IniciarConexao;
 import com.junior.database.AtualizarDados;
+import com.junior.database.DeletarDados;
+import com.junior.database.InserirDados;
 import com.junior.database.VerDados;
 
 public class App {
@@ -12,9 +14,7 @@ public class App {
     
         Connection connection = IniciarConexao.iniciarConexao();
 
-        VerDados.verDados(connection);
-
-        AtualizarDados.atualiarDados(connection);
+        InserirDados.inserirDados(connection);
         
         VerDados.verDados(connection);
         
